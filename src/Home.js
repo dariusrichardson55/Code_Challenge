@@ -43,9 +43,6 @@ export default class Home extends Component {
                 contact: this.documentData.contact,
                 startdate: this.documentData.startdate,
                 enddate: this.documentData.enddate,
-                Ford: this.documentData.Ford,
-                VW: this.documentData.VW,
-                Audi: this.documentData.Audi,
 
             })
         } else {
