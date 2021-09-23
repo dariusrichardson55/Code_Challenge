@@ -12,7 +12,7 @@ export default class Home extends Component {
         this.state = {
             name: "",
             email: "",
-            phone: "",
+            contact: "",
             startdate: "",
             enddate: "",
             Ford: "",
@@ -43,7 +43,7 @@ export default class Home extends Component {
             this.setState({
                 name: this.documentData.name,
                 email: this.documentData.email,
-                phone: this.documentData.phone,
+                contact: this.documentData.contact,
                 startdate: this.documentData.startdate,
                 enddate: this.documentData.enddate,
                 Ford: this.documentData.Ford,
@@ -56,7 +56,7 @@ export default class Home extends Component {
             this.setState({
                 name: '',
                 email: '',
-                phone: '',
+                contact: '',
                 startdate: '',
                 enddate: '',
                 Ford: '',
@@ -95,12 +95,12 @@ export default class Home extends Component {
                             value={this.state.email}
                         />
                     </Form.Group>
-                    <Form.Group controlId="phone" className="Form_Layout">
+                    <Form.Group controlId="contact" className="Form_Layout">
                         <b><Form.Label>Phone Number: </Form.Label></b>
                         <Form.Control
                             type="tel"
-                            placeholder="Enter Phone number"
-                            name="phone"
+                            placeholder="Enter Contact number"
+                            name="contact"
                             onChange={this.handleInputChange}
                             value={this.state.phone}
                         />
@@ -125,7 +125,7 @@ export default class Home extends Component {
                             value={this.state.enddate}
                         />
                     </Form.Group>
-                    <Button variant="primary" type="submit" className="Submit" disabled={!this.state.name || !this.state.email || !this.state.email || !this.state.startdate || !this.state.enddate}>
+                    <Button variant="primary" type="submit" className="Submit" disabled={!this.state.name || !this.state.email || !this.state.contact || !this.state.startdate || !this.state.enddate}>
                         Submit
                     </Button>
                 </Form>
