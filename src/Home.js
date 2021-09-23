@@ -87,7 +87,7 @@ export default class Home extends Component {
                         <b><Form.Label>Contact Number: </Form.Label></b>
                         <Form.Control
                             type="tel"
-                            placeholder="Enter Contact number"
+                            placeholder="Enter contact number"
                             name="contact"
                             onChange={this.handleInputChange}
                             value={this.state.contact}
