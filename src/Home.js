@@ -15,9 +15,6 @@ export default class Home extends Component {
             contact: "",
             startdate: "",
             enddate: "",
-            Ford: "",
-            VW: "",
-            Audi: "",
         };
     }
     handleInputChange = (event) => {
@@ -59,9 +56,6 @@ export default class Home extends Component {
                 contact: '',
                 startdate: '',
                 enddate: '',
-                Ford: '',
-                VW: '',
-                Audi: '',
             });
         }
 
@@ -96,7 +90,7 @@ export default class Home extends Component {
                         />
                     </Form.Group>
                     <Form.Group controlId="contact" className="Form_Layout">
-                        <b><Form.Label>Phone Number: </Form.Label></b>
+                        <b><Form.Label>Contact Number: </Form.Label></b>
                         <Form.Control
                             type="tel"
                             placeholder="Enter Contact number"
