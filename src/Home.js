@@ -19,7 +19,6 @@ export default class Home extends Component {
     }
     handleInputChange = (event) => {
         this.setState({ [event.target.name]: event.target.value });
-
     };
 
 
@@ -43,7 +42,6 @@ export default class Home extends Component {
                 contact: this.documentData.contact,
                 startdate: this.documentData.startdate,
                 enddate: this.documentData.enddate,
-
             })
         } else {
 
@@ -55,7 +53,6 @@ export default class Home extends Component {
                 enddate: '',
             });
         }
-
     }
 
 
@@ -126,4 +123,3 @@ export default class Home extends Component {
         );
     };
 }
-
