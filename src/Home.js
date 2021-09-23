@@ -93,7 +93,7 @@ export default class Home extends Component {
                             placeholder="Enter Contact number"
                             name="contact"
                             onChange={this.handleInputChange}
-                            value={this.state.phone}
+                            value={this.state.contact}
                         />
                     </Form.Group>
                     <Form.Group controlId="startdate" className="Form_Layout">
