@@ -1,0 +1,24 @@
+.Wrapper {
+  position: relative;
+  left: 3%;
+  text-align: center;
+  background-color: rgb(77, 66, 66);
+  height: 500px;
+  width: 400px;
+}
+
+.Form_Layout {
+  position: relative;
+  top: 10%;
+  margin-bottom: 20px;
+}
+
+.Submit {
+  background-color: black;
+  position: relative;
+  top: 150px;
+  left: 240%;
+  text-decoration: none;
+  padding: 4%;
+  color: white;
+}

@@ -1,0 +1,92 @@
+/* Ford Fiesta */
+
+.Container {
+  background-color: brown;
+  position: absolute;
+  width: 32%;
+  height: 60%;
+  top: 30%;
+  left: 150%;
+}
+
+.Container > .Ford_Fiesta_Picture {
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  height: 29%;
+  bottom: 100%;
+  left: 1%;
+}
+.Ford_Fiesta_Picture {
+  position: absolute;
+  width: 90%;
+  left: 900%;
+  bottom: 66%;
+}
+
+.Container_2 {
+  background-color: brown;
+  position: absolute;
+  width: 32%;
+  height: 60%;
+  top: 30%;
+  left: 190%;
+}
+
+.Container_2 > .VW_Golf_Picture {
+  position: absolute;
+  width: 100%;
+  height: 29%;
+  bottom: 100%;
+  left: 1%;
+}
+
+.VW_Golf_Picture {
+  position: absolute;
+  width: 82%;
+  left: 900%;
+  bottom: 66%;
+}
+
+.Container_3 {
+  background-color: brown;
+  position: absolute;
+  width: 32%;
+  height: 60%;
+  top: 30%;
+  left: 230%;
+}
+
+.Container_3 > .Audi_Q3_Picture {
+  position: absolute;
+  width: 100%;
+  height: 29%;
+  bottom: 100%;
+  left: 1%;
+}
+
+.Audi_Q3_Picture {
+  position: absolute;
+  width: 82%;
+  left: 900%;
+  bottom: 66%;
+}
+
+.move {
+  position: relative;
+  top: 30%;
+  left: 900%;
+  text-align: center;
+}
+
+.Select {
+  background-color: black;
+  position: relative;
+  top: 39px;
+  right: 0%;
+  width: 100%;
+  text-decoration: none;
+  padding: 7% 20%;
+  color: white;
+  font-size: small;
+}
