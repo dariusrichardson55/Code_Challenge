@@ -21,8 +21,6 @@ export default class Home extends Component {
         this.setState({ [event.target.name]: event.target.value });
     };
 
-
-
     handleOnSubmit = (event) => {
         event.preventDefault();
         localStorage.setItem("Customer's contact information", JSON.stringify(this.state));
@@ -54,6 +52,7 @@ export default class Home extends Component {
             });
         }
     }
+
 
 
     render() {
@@ -117,7 +116,6 @@ export default class Home extends Component {
                         Submit
                     </Button>
                 </Form>
-
                 <Car />
             </div >
         );

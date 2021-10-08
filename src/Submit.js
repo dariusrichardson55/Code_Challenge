@@ -9,6 +9,7 @@ const Submit = props => {
             <div style={{ position: "absolute", top: "200px", left: "325px" }}>
                 <h1>Your order has been confirmed</h1>
                 <h1>Thank you {name} for your order.</h1>
+
             </div>
         </center>
     );

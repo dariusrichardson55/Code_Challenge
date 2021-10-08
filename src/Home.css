@@ -14,11 +14,15 @@
 }
 
 .Submit {
-  background-color: black;
   position: relative;
   top: 150px;
   left: 240%;
   text-decoration: none;
   padding: 4%;
+  color: black;
+}
+
+.Submit button[enabled] {
+  background-color: black;
   color: white;
 }

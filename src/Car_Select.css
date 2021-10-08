@@ -79,7 +79,7 @@
   text-align: center;
 }
 
-.Select {
+.blackButton {
   background-color: black;
   position: relative;
   top: 39px;
@@ -88,5 +88,17 @@
   text-decoration: none;
   padding: 7% 20%;
   color: white;
-  font-size: small;
+  font-size: 11px;
+}
+
+.greenButton {
+  background-color: green;
+  position: relative;
+  top: 39px;
+  right: 0%;
+  width: 100%;
+  text-decoration: none;
+  padding: 7% 20%;
+  color: white;
+  font-size: 11px;
 }

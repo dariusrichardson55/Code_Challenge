@@ -38,16 +38,25 @@ export default class Car extends Component {
         this.state = {
             isToggleOn1: false,
             isToggleOff1: true,
+            isToggleOn1Black: false,
+            isToggleOff1Black: true,
+
         }
 
         this.state = {
             isToggleOn2: false,
             isToggleOff2: true,
+            isToggleOn2Black: false,
+            isToggleOff2Black: true,
+
         }
 
         this.state = {
             isToggleOn3: false,
             isToggleOff3: true,
+            isToggleOn3Black: false,
+            isToggleOff3Black: true,
+
         }
 
         this.changeMessage = this.changeMessage.bind(this);
@@ -60,6 +69,10 @@ export default class Car extends Component {
             isToggleOn1: !state.isToggleOn1,
             isToggleOn2: state.isToggleOff2,
             isToggleOn3: !state.isToggleOff3,
+            isToggleOn1Black: !state.isToggleOn1Black,
+            isToggleOn2Black: state.isToggleOff2Black,
+            isToggleOn3Black: !state.isToggleOff3Black,
+
         }));
     }
 
@@ -68,6 +81,10 @@ export default class Car extends Component {
             isToggleOn2: !state.isToggleOn2,
             isToggleOn1: state.isToggleOff1,
             isToggleOn3: !state.isToggleOff3,
+            isToggleOn2Black: !state.isToggleOn2Black,
+            isToggleOn1Black: state.isToggleOff1Black,
+            isToggleOn3Black: !state.isToggleOff3Black,
+
         }));
     }
 
@@ -76,6 +93,10 @@ export default class Car extends Component {
             isToggleOn3: !state.isToggleOn3,
             isToggleOn2: state.isToggleOff2,
             isToggleOn1: state.isToggleOff1,
+            isToggleOn3Black: !state.isToggleOn3Black,
+            isToggleOn2Black: state.isToggleOff2Black,
+            isToggleOn1Black: state.isToggleOff1Black,
+
         }));
     }
 
@@ -92,6 +113,15 @@ export default class Car extends Component {
     }
 
     render() {
+
+        function revFunction() {
+
+            document.getElementById('rnum').disabled = false;
+        }
+        let SelectFordColour = this.state.isToggleOn1Black ? "greenButton" : "blackButton";
+        let SelectVWColour = this.state.isToggleOn2Black ? "greenButton" : "blackButton";
+        let SelectAudiColour = this.state.isToggleOn3Black ? "greenButton" : "blackButton";
+
         return (
             <>
 
@@ -108,7 +138,7 @@ export default class Car extends Component {
                         <h5>{this.state_Ford.Number_of_seats}</h5>
                         <h5>{this.state_Ford.Colour}</h5>
                         <h5>{this.state_Ford.Price}</h5>
-                        <Button onClick={(e) => { this.changeMessage(e); this.LocalstorageFord() }} className="Select">{this.state.isToggleOn1 ? "Selected" : "Select Ford"}</Button>
+                        <Button onClick={(e) => { this.changeMessage(e); this.LocalstorageFord() }} className={SelectFordColour}>{this.state.isToggleOn1 ? "Selected Ford" : "Select Ford"} </Button>
                     </div>
 
                     {/* VW Golf */}
@@ -121,7 +151,7 @@ export default class Car extends Component {
                         <h5>{this.state_VW.Number_of_seats}</h5>
                         <h5>{this.state_VW.Colour}</h5>
                         <h5>{this.state_VW.Price}</h5>
-                        <Button onClick={(e) => { this.changeMessage2(e); this.LocalstorageVW() }} className="Select">{this.state.isToggleOn2 ? "Selected" : "Select VW"}</Button>
+                        <Button onClick={(e) => { this.changeMessage2(e); this.LocalstorageVW() }} className={SelectVWColour}>{this.state.isToggleOn2 ? "Selected VW" : "Select VW"}</Button>
                     </div>
 
                     {/* Audi Q3 */}
@@ -134,8 +164,7 @@ export default class Car extends Component {
                         <h5>{this.state_Audi.Number_of_seats}</h5>
                         <h5>{this.state_Audi.Colour}</h5>
                         <h5>{this.state_Audi.Price}</h5>
-                        <Button onClick={(e) => { this.changeMessage3(e); this.LocalstorageAudi() }} className="Select">{this.state.isToggleOn3 ? "Selected" : "Select Audi"}</Button>
-
+                        <Button onClick={(e) => { this.changeMessage3(e); this.LocalstorageAudi(); revFunction() }} className={SelectAudiColour}>{this.state.isToggleOn3 ? "Selected Audi" : "Select Audi"}</Button>
                     </div>
                 </div>
 
