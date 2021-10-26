@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Ford_Fiesta from '../src/Ford-Fiesta.jpeg';
-import VW_Golf from '../src/VW-Polo.jpeg';
-import Audi_Q3 from '../src/Audi-Q3.jpeg';
+import Ford_Fiesta from '../src/Images/Ford-Fiesta.jpeg';
+import VW_Golf from '../src/Images/VW-Polo.jpeg';
+import Audi_Q3 from '../src/Images/Audi-Q3.jpeg';
 import { Button } from "react-bootstrap";
 import './Car_Select.css';
 
@@ -111,6 +111,7 @@ export default class Car extends Component {
     LocalstorageAudi = () => {
         localStorage.setItem("Customer's car to hire", JSON.stringify(this.state_Audi));
     }
+
 
     render() {
 

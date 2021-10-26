@@ -6,7 +6,7 @@ const Submit = props => {
         (props.location && props.location.state) || {};
     return (
         <center>
-            <div style={{ position: "absolute", top: "200px", left: "325px" }}>
+            <div style={{ position: "absolute", top: "200px", left: "405px" }}>
                 <h1>Your order has been confirmed</h1>
                 <h1>Thank you {name} for your order.</h1>
 

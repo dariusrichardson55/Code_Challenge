@@ -85,7 +85,7 @@ export default class Home extends Component {
                     <Form.Group controlId="contact" className="Form_Layout">
                         <b><Form.Label>Contact Number: </Form.Label></b>
                         <Form.Control
-                            type="tel"
+                            type="text"
                             placeholder="Enter contact number"
                             name="contact"
                             onChange={this.handleInputChange}
@@ -118,6 +118,7 @@ export default class Home extends Component {
                 </Form>
                 <Car />
             </div >
+
         );
     };
 }
